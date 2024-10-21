@@ -1152,4 +1152,71 @@ blockquote {
     font-size: 20px;
   }
 }
+body {
+  margin: 0; /* Supprime les marges du corps */
+}
+
+.navbar {
+  position: fixed; /* Rendre la navbar fixe en haut de la page */
+  top: 0; /* Positionner la navbar en haut */
+  left: 0; /* Positionner à gauche */
+  width: 100%; /* Prendre toute la largeur de la page */
+  height: 90px; /* Ajustez la hauteur de votre navbar */
+  text-align: center; /* Centrer le texte */
+  padding: 20px 0; /* Ajoutez du remplissage pour le texte */
+  z-index: 2; /* Assurez-vous que la navbar est au-dessus de la vidéo */
+  background-color: var(--secondary-color);
+
+
+}
+
+.hero-section {
+  position: relative; /* Position relative pour le positionnement de la vidéo */
+  overflow: hidden; /* Pour cacher tout débordement */
+  height: calc(100vh - 90px); /* Ajustez la hauteur en fonction de la hauteur de votre navbar */
+  margin-top: 90px; /* Ajoutez une marge pour que la vidéo ne soit pas cachée par la navbar fixe */
+}
+
+.video-hero {
+  position: absolute; /* Position absolue pour prendre tout l'espace */
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  width: 100vw; /* 100% de la largeur de la fenêtre */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  object-fit: cover; /* Pour que la vidéo garde ses proportions */
+  transform: translate(-50%, -50%); /* Centre la vidéo */
+}
+
+.featured-section {
+  background-color: var(--secondary-color);
+  border-radius: 0 0 100px 100px;
+  padding-bottom: 100px;
+}
+
+.featured-section .row {
+  position: relative;
+  bottom: 100px;
+  margin-bottom: -100px;
+}
+
+.custom-block {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Laisser la largeur à 100% pour qu'il prenne tout l'espace possible dans la colonne */
+  max-width: 800px; /* Ajouter une largeur maximale pour contrôler l'élargissement */
+  margin: 0 auto; /* Centrer */
+}
+
+.custom-block img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+
 
